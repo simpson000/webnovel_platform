@@ -73,29 +73,6 @@
 - [ ] 네이버 시리즈 크롤러 구현
 - [ ] 기본 API 엔드포인트 구현
 
-## 🚀 시작하기
-
-### 요구사항
-
-- Java 17+
-- Node.js 16+
-- MySQL 8+
-- Docker & Docker Compose
-
-### 설치 및 실행
-
-```bash
-# 저장소 클론
-git clone https://github.com/your-username/webnovel-platform.git
-cd webnovel-platform
-
-# 의존성 설치
-./mvnw install
-
-# 개발 환경 실행
-docker-compose up -d
-./mvnw spring-boot:run
-
 📚 문서
 
 상세 설계 문서

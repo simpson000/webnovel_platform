@@ -24,6 +24,8 @@
 ## 프로젝트 문서
 상세 문서는 [Notion 위키]([https://www.notion.so/_-1c52816941e380dc9c04f340a601ab70?pvs=4])에서 확인할 수 있습니다.
 
+## 관련 문서
+- [기능 설계 문서]([https://www.notion.so/_-1c52816941e380dc9c04f340a601ab70?pvs=4)
 
 ## 라이센스
 

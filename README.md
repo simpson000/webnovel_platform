@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://via.placeholder.com/150?text=WebNovel" alt="웹소설 통합 플랫폼 로고" width="150" height="150">
   <h1>웹소설 통합 플랫폼</h1>
   <p>여러 웹소설 플랫폼의 콘텐츠를 한 곳에서 관리하고 즐기세요</p>
   

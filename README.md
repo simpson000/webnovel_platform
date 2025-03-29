@@ -18,7 +18,7 @@
 - **백엔드**: Java Spring Boot
 - **데이터베이스**: MySQL, Redis
 - **크롤링**: Puppeteer (Node.js)
-- **프론트엔드**: 미정 (React 고려중)
+- **프론트엔드**: vue 
 - **인프라**: Docker, AWS
 
 ## 라이센스

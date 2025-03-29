@@ -95,3 +95,13 @@ cd webnovel-platform
 # 개발 환경 실행
 docker-compose up -d
 ./mvnw spring-boot:run
+
+📚 문서
+
+상세 설계 문서
+API 문서
+개발 가이드
+
+
+📄 라이센스
+이 프로젝트는 MIT 라이센스 하에 배포됩니다. 자세한 내용은 LICENSE 파일을 참조하세요.

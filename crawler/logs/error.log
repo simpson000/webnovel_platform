@@ -1,0 +1,488 @@
+2025-03-30T15:13:54.300Z [31merror[39m: 데이터베이스 연결 실패: Access denied for user 'root'@'localhost' (using password: NO)
+2025-03-30T15:16:43.594Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.category_tab_list` failed: Waiting failed: 10000ms exceeded
+2025-03-30T15:16:47.383Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Waiting for selector `.category_tab_list` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2025-03-30T15:16:49.395Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame '7C63B9477F330149691BE38FD9EE9E40'.
+2025-03-30T15:16:49.396Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame '7C63B9477F330149691BE38FD9EE9E40'.
+2025-03-30T15:16:49.401Z [31merror[39m: 크롤링 오류: Protocol error: Connection closed.
+2025-03-30T15:16:59.677Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.category_tab_list` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2025-03-30T15:17:01.681Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame 'B154E1127AA79233B3402D1317D6143A'.
+2025-03-30T15:17:03.693Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame 'B154E1127AA79233B3402D1317D6143A'.
+2025-03-30T15:17:03.693Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame 'B154E1127AA79233B3402D1317D6143A'.
+2025-03-30T15:17:03.697Z [31merror[39m: 크롤링 오류: Protocol error (Target.closeTarget): No target with given id found
+2025-03-30T15:19:22.546Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.category_tab_list` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2025-03-30T15:19:24.554Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame 'DE9CD462DDDD3F2617CB96BE50B65CF7'.
+2025-03-30T15:19:26.555Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame 'DE9CD462DDDD3F2617CB96BE50B65CF7'.
+2025-03-30T15:19:26.555Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame 'DE9CD462DDDD3F2617CB96BE50B65CF7'.
+2025-03-30T15:19:26.558Z [31merror[39m: 크롤링 오류: Protocol error: Connection closed.
+2025-03-30T15:19:40.912Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.category_tab_list` failed: Waiting failed: 10000ms exceeded
+2025-03-30T15:19:54.008Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Waiting for selector `.category_tab_list` failed: Waiting failed: 10000ms exceeded
+2025-03-30T15:20:07.106Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Waiting for selector `.category_tab_list` failed: Waiting failed: 10000ms exceeded
+2025-03-30T15:20:07.106Z [31merror[39m: 크롤링 실패: Waiting for selector `.category_tab_list` failed: Waiting failed: 10000ms exceeded
+2025-03-30T15:26:19.907Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.category_tab_list` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2025-03-30T15:26:21.920Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame '0D6F91F63C6880E34F626B7001891080'.
+2025-03-30T15:26:23.923Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame '0D6F91F63C6880E34F626B7001891080'.
+2025-03-30T15:26:23.924Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame '0D6F91F63C6880E34F626B7001891080'.
+2025-03-30T15:26:23.927Z [31merror[39m: 크롤링 오류: Protocol error (Target.closeTarget): No target with given id found
+2025-03-30T15:26:49.302Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Navigating frame was detached
+2025-03-30T15:26:52.357Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame 'F6DBD548B855035E584F8A23BF2DF2DE'.
+2025-03-30T15:26:55.462Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame 'F6DBD548B855035E584F8A23BF2DF2DE'.
+2025-03-30T15:26:55.463Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame 'F6DBD548B855035E584F8A23BF2DF2DE'.
+2025-03-30T15:26:55.470Z [31merror[39m: 크롤링 오류: Protocol error: Connection closed.
+2025-03-30T15:27:21.809Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T15:27:41.313Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T15:28:03.675Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T15:28:03.675Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T15:41:39.209Z [31merror[39m: 크롤링 시작 실패: NaverCrawler is not a constructor
+2025-03-30T15:41:41.914Z [31merror[39m: 크롤링 시작 실패: NaverCrawler is not a constructor
+2025-03-30T15:41:45.900Z [31merror[39m: 크롤링 시작 실패: NaverCrawler is not a constructor
+2025-03-30T15:41:57.189Z [31merror[39m: 크롤링 시작 실패: NaverCrawler is not a constructor
+2025-03-30T15:44:12.555Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T15:44:17.283Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T15:44:21.671Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T15:44:21.671Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T15:45:30.545Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T15:45:34.892Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T15:45:39.867Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T15:45:39.867Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T15:46:53.290Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T15:46:57.617Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T15:47:01.823Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T15:47:01.823Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T15:59:16.680Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Navigating frame was detached
+2025-03-30T15:59:20.447Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame 'CD04174B578FBBCD2958BC7C12DE7E59'.
+2025-03-30T15:59:23.657Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame 'CD04174B578FBBCD2958BC7C12DE7E59'.
+2025-03-30T15:59:23.657Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame 'CD04174B578FBBCD2958BC7C12DE7E59'.
+2025-03-30T15:59:23.662Z [31merror[39m: 크롤링 오류: Protocol error: Connection closed.
+2025-03-30T15:59:27.371Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T15:59:31.983Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T15:59:37.127Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T15:59:37.127Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T16:00:14.508Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T16:00:19.208Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T16:00:23.565Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T16:00:23.566Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T16:01:09.060Z [31merror[39m: 페이지 이동 오류 (시도 1/3): this.page.waitForTimeout is not a function
+2025-03-30T16:01:13.541Z [31merror[39m: 페이지 이동 오류 (시도 2/3): this.page.waitForTimeout is not a function
+2025-03-30T16:01:18.157Z [31merror[39m: 페이지 이동 오류 (시도 3/3): this.page.waitForTimeout is not a function
+2025-03-30T16:01:18.157Z [31merror[39m: 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T16:02:04.346Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:02:04.549Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:02:17.330Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:02:20.535Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:02:24.590Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2025-03-30T16:02:28.349Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame 'BF19993A269D86391A123FF49256EA3C'.
+2025-03-30T16:02:28.350Z [31merror[39m: 크롤링 실패: Attempted to use detached Frame 'BF19993A269D86391A123FF49256EA3C'.
+2025-03-30T16:02:28.353Z [31merror[39m: 크롤링 오류: Protocol error: Connection closed.
+2025-03-30T16:13:06.668Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:13:06.858Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:13:18.556Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:13:22.603Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:13:34.802Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:13:38.598Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:13:50.862Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:13:50.862Z [31merror[39m: 크롤링 실패: Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:54:37.311Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:54:37.523Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:54:51.347Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:54:55.187Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:55:08.278Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:55:12.147Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: the server responded with a status of 404 ()
+2025-03-30T16:55:25.129Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:55:25.130Z [31merror[39m: 크롤링 실패: Waiting for selector `.end_section, .end_head, .lst_item` failed: Waiting failed: 10000ms exceeded
+2025-03-30T16:57:02.346Z [31merror[39m: 문피아 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T17:02:28.260Z [31merror[39m: 문피아 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-30T17:02:30.048Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Attempted to use detached Frame '1D1270E21C47CD83A46C71BF9E20F433'.
+2025-03-30T17:02:33.484Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame '1D1270E21C47CD83A46C71BF9E20F433'.
+2025-03-30T17:02:36.713Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame '1D1270E21C47CD83A46C71BF9E20F433'.
+2025-03-30T17:02:36.714Z [31merror[39m: 테스트 중 심각한 오류 발생: Attempted to use detached Frame '1D1270E21C47CD83A46C71BF9E20F433'.
+2025-03-30T17:09:42.845Z [31merror[39m: ❌ 크롤링 테스트 중 오류 발생: 페이지 이동 최대 재시도 횟수 초과: https://www.munpia.com/page/best
+2025-03-30T17:13:52.253Z [31merror[39m: 크롤링 테스트 중 오류 발생: crawler.navigateWithRetry is not a function
+2025-03-30T17:14:19.130Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-30T17:14:22.479Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame '76CB8287F74EEF49493979E61BF5CF94'.
+2025-03-30T17:15:39.486Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-30T17:15:42.839Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-30T17:15:46.379Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame '15062097188195DACCBAAEBA2E48FDBE'.
+2025-03-30T17:15:51.782Z [31merror[39m: 페이지 이동 오류 (시도 1/3): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-30T17:15:55.579Z [31merror[39m: 페이지 이동 오류 (시도 2/3): Attempted to use detached Frame 'ECE3D276E948E2B51AC772AB0A4F02E1'.
+2025-03-30T17:15:58.596Z [31merror[39m: 페이지 이동 오류 (시도 3/3): Attempted to use detached Frame 'ECE3D276E948E2B51AC772AB0A4F02E1'.
+2025-03-30T17:15:58.597Z [31merror[39m: 테스트 오류: Attempted to use detached Frame 'ECE3D276E948E2B51AC772AB0A4F02E1'.
+2025-03-31T01:51:25.187Z [31merror[39m: 문피아 크롤링 실패: this.page.waitForTimeout is not a function
+2025-03-31T01:53:03.554Z [31merror[39m: 소설 상세 정보 추출 오류 (각성했더니 신의가 되었다): this.page.waitForTimeout is not a function
+2025-03-31T01:53:12.405Z [31merror[39m: 소설 상세 정보 추출 오류 (고려에서 치트 없이 문명합니다): this.page.waitForTimeout is not a function
+2025-03-31T01:53:21.470Z [31merror[39m: 소설 상세 정보 추출 오류 (돌연 미치게 잘생겼더니 세상이 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T01:53:31.189Z [31merror[39m: 소설 상세 정보 추출 오류 (전직 목사가 이세계에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T01:53:39.814Z [31merror[39m: 소설 상세 정보 추출 오류 (오빠가 천재였다.): this.page.waitForTimeout is not a function
+2025-03-31T01:53:48.105Z [31merror[39m: 소설 상세 정보 추출 오류 (대영제국의 숨은 거물이 되었다): this.page.waitForTimeout is not a function
+2025-03-31T01:53:56.741Z [31merror[39m: 소설 상세 정보 추출 오류 (경험치로 초월하는 0레벨 플레이어): this.page.waitForTimeout is not a function
+2025-03-31T01:54:06.166Z [31merror[39m: 소설 상세 정보 추출 오류 (아공간 슈퍼마켓에 어서오세요): this.page.waitForTimeout is not a function
+2025-03-31T01:54:16.039Z [31merror[39m: 소설 상세 정보 추출 오류 (천재 뉴비의 흡수수선전): this.page.waitForTimeout is not a function
+2025-03-31T01:54:24.341Z [31merror[39m: 소설 상세 정보 추출 오류 (방송천재가 라이브로 사건을 해결함): this.page.waitForTimeout is not a function
+2025-03-31T01:54:33.569Z [31merror[39m: 소설 상세 정보 추출 오류 (힐러가 무림에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T01:54:42.962Z [31merror[39m: 소설 상세 정보 추출 오류 (귀환했더니 탑공략이 너무 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T01:55:24.029Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T01:55:28.837Z [31merror[39m: 소설 상세 정보 추출 오류 (각성했더니 신의가 되었다): this.page.waitForTimeout is not a function
+2025-03-31T01:55:28.839Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:28.839Z [31merror[39m: 소설 "각성했더니 신의가 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:35.909Z [31merror[39m: 소설 상세 정보 추출 오류 (고려에서 치트 없이 문명합니다): this.page.waitForTimeout is not a function
+2025-03-31T01:55:35.911Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:35.911Z [31merror[39m: 소설 "고려에서 치트 없이 문명합니다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:44.064Z [31merror[39m: 소설 상세 정보 추출 오류 (돌연 미치게 잘생겼더니 세상이 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T01:55:44.066Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:44.066Z [31merror[39m: 소설 "돌연 미치게 잘생겼더니 세상이 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:52.156Z [31merror[39m: 소설 상세 정보 추출 오류 (전직 목사가 이세계에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T01:55:52.158Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:52.158Z [31merror[39m: 소설 "전직 목사가 이세계에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:55:54.944Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T01:56:00.151Z [31merror[39m: 소설 상세 정보 추출 오류 (오빠가 천재였다.): this.page.waitForTimeout is not a function
+2025-03-31T01:56:00.153Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:00.153Z [31merror[39m: 소설 "오빠가 천재였다." 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:08.161Z [31merror[39m: 소설 상세 정보 추출 오류 (대영제국의 숨은 거물이 되었다): this.page.waitForTimeout is not a function
+2025-03-31T01:56:08.163Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:08.163Z [31merror[39m: 소설 "대영제국의 숨은 거물이 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:15.035Z [31merror[39m: 소설 상세 정보 추출 오류 (경험치로 초월하는 0레벨 플레이어): this.page.waitForTimeout is not a function
+2025-03-31T01:56:15.037Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:15.038Z [31merror[39m: 소설 "경험치로 초월하는 0레벨 플레이어" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:22.539Z [31merror[39m: 소설 상세 정보 추출 오류 (아공간 슈퍼마켓에 어서오세요): this.page.waitForTimeout is not a function
+2025-03-31T01:56:22.541Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:22.541Z [31merror[39m: 소설 "아공간 슈퍼마켓에 어서오세요" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:30.366Z [31merror[39m: 소설 상세 정보 추출 오류 (천재 뉴비의 흡수수선전): this.page.waitForTimeout is not a function
+2025-03-31T01:56:30.368Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:30.368Z [31merror[39m: 소설 "천재 뉴비의 흡수수선전" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:38.078Z [31merror[39m: 소설 상세 정보 추출 오류 (방송천재가 라이브로 사건을 해결함): this.page.waitForTimeout is not a function
+2025-03-31T01:56:38.080Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:38.080Z [31merror[39m: 소설 "방송천재가 라이브로 사건을 해결함" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:40.629Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T01:56:45.391Z [31merror[39m: 소설 상세 정보 추출 오류 (힐러가 무림에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T01:56:45.392Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:45.392Z [31merror[39m: 소설 "힐러가 무림에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:48.374Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T01:56:53.897Z [31merror[39m: 소설 상세 정보 추출 오류 (귀환했더니 탑공략이 너무 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T01:56:53.898Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:56:53.898Z [31merror[39m: 소설 "귀환했더니 탑공략이 너무 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:57:53.103Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:57:53.104Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:57:53.105Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:57:53.106Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:57:53.436Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.437Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.438Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.440Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.441Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.442Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.443Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.444Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.444Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.445Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.446Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.447Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.447Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.448Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.449Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.450Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.451Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.452Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.453Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.454Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.455Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.455Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.457Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.458Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.460Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.462Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.464Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.466Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.467Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.470Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.471Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.473Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.474Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.476Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.478Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.479Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.480Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.481Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.482Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.484Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.486Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.489Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.491Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.492Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.493Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.494Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.496Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.497Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.499Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.502Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.504Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.505Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.508Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.509Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.510Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.516Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.518Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.521Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.524Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.526Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.528Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.531Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.533Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.535Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.536Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.538Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.540Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.540Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.542Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.544Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.546Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.551Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.553Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.556Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.558Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.560Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.562Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.564Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.567Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.570Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.572Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.575Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.577Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.579Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.580Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.582Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.583Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.585Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.587Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.588Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.589Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.590Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.592Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.593Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.595Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.597Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.599Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.601Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.609Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.612Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.616Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.617Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.619Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.621Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.625Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.628Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.628Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.629Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.630Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.630Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.631Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.633Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.634Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.635Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.636Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.636Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.637Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.637Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.638Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.640Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.641Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.641Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.643Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.646Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.646Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.647Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_RESET
+2025-03-31T01:57:53.647Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:58:07.585Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_ABORTED
+2025-03-31T01:58:07.586Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_ABORTED
+2025-03-31T01:58:07.842Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_ABORTED
+2025-03-31T01:58:07.842Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_ABORTED
+2025-03-31T01:58:07.843Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_ABORTED
+2025-03-31T01:58:07.845Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_CONNECTION_ABORTED
+2025-03-31T01:58:08.032Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:58:12.538Z [31merror[39m: 소설 상세 정보 추출 오류 (각성했더니 신의가 되었다): this.page.waitForTimeout is not a function
+2025-03-31T01:58:12.540Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:12.540Z [31merror[39m: 소설 "각성했더니 신의가 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:20.369Z [31merror[39m: 소설 상세 정보 추출 오류 (고려에서 치트 없이 문명합니다): this.page.waitForTimeout is not a function
+2025-03-31T01:58:20.370Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:20.370Z [31merror[39m: 소설 "고려에서 치트 없이 문명합니다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:26.075Z [31merror[39m: 소설 상세 정보 추출 오류 (돌연 미치게 잘생겼더니 세상이 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T01:58:26.076Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:26.076Z [31merror[39m: 소설 "돌연 미치게 잘생겼더니 세상이 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:30.962Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:58:30.963Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:58:35.047Z [31merror[39m: 소설 상세 정보 추출 오류 (전직 목사가 이세계에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T01:58:35.049Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:35.049Z [31merror[39m: 소설 "전직 목사가 이세계에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:42.117Z [31merror[39m: 소설 상세 정보 추출 오류 (오빠가 천재였다.): this.page.waitForTimeout is not a function
+2025-03-31T01:58:42.118Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:42.119Z [31merror[39m: 소설 "오빠가 천재였다." 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:45.355Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NETWORK_CHANGED
+2025-03-31T01:58:48.360Z [31merror[39m: 소설 상세 정보 추출 오류 (대영제국의 숨은 거물이 되었다): this.page.waitForTimeout is not a function
+2025-03-31T01:58:48.362Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:48.362Z [31merror[39m: 소설 "대영제국의 숨은 거물이 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:54.622Z [31merror[39m: 소설 상세 정보 추출 오류 (경험치로 초월하는 0레벨 플레이어): this.page.waitForTimeout is not a function
+2025-03-31T01:58:54.623Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:58:54.623Z [31merror[39m: 소설 "경험치로 초월하는 0레벨 플레이어" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:01.859Z [31merror[39m: 소설 상세 정보 추출 오류 (아공간 슈퍼마켓에 어서오세요): this.page.waitForTimeout is not a function
+2025-03-31T01:59:01.861Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:01.861Z [31merror[39m: 소설 "아공간 슈퍼마켓에 어서오세요" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:08.532Z [31merror[39m: 소설 상세 정보 추출 오류 (천재 뉴비의 흡수수선전): this.page.waitForTimeout is not a function
+2025-03-31T01:59:08.534Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:08.534Z [31merror[39m: 소설 "천재 뉴비의 흡수수선전" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:15.595Z [31merror[39m: 소설 상세 정보 추출 오류 (방송천재가 라이브로 사건을 해결함): this.page.waitForTimeout is not a function
+2025-03-31T01:59:15.597Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:15.597Z [31merror[39m: 소설 "방송천재가 라이브로 사건을 해결함" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:22.258Z [31merror[39m: 소설 상세 정보 추출 오류 (힐러가 무림에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T01:59:22.260Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:22.260Z [31merror[39m: 소설 "힐러가 무림에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:30.332Z [31merror[39m: 소설 상세 정보 추출 오류 (귀환했더니 탑공략이 너무 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T01:59:30.334Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T01:59:30.334Z [31merror[39m: 소설 "귀환했더니 탑공략이 너무 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:03.583Z [31merror[39m: 소설 상세 정보 추출 오류 (각성했더니 신의가 되었다): this.page.waitForTimeout is not a function
+2025-03-31T02:07:03.585Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:03.585Z [31merror[39m: 소설 "각성했더니 신의가 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:06.218Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:07:09.963Z [31merror[39m: 소설 상세 정보 추출 오류 (고려에서 치트 없이 문명합니다): this.page.waitForTimeout is not a function
+2025-03-31T02:07:09.964Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:09.965Z [31merror[39m: 소설 "고려에서 치트 없이 문명합니다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:16.396Z [31merror[39m: 소설 상세 정보 추출 오류 (돌연 미치게 잘생겼더니 세상이 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T02:07:16.398Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:16.398Z [31merror[39m: 소설 "돌연 미치게 잘생겼더니 세상이 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:24.617Z [31merror[39m: 소설 상세 정보 추출 오류 (전직 목사가 이세계에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T02:07:24.619Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:24.619Z [31merror[39m: 소설 "전직 목사가 이세계에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:31.473Z [31merror[39m: 소설 상세 정보 추출 오류 (오빠가 천재였다.): this.page.waitForTimeout is not a function
+2025-03-31T02:07:31.475Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:31.475Z [31merror[39m: 소설 "오빠가 천재였다." 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:38.373Z [31merror[39m: 소설 상세 정보 추출 오류 (대영제국의 숨은 거물이 되었다): this.page.waitForTimeout is not a function
+2025-03-31T02:07:38.375Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:38.375Z [31merror[39m: 소설 "대영제국의 숨은 거물이 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:45.363Z [31merror[39m: 소설 상세 정보 추출 오류 (경험치로 초월하는 0레벨 플레이어): this.page.waitForTimeout is not a function
+2025-03-31T02:07:45.365Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:45.365Z [31merror[39m: 소설 "경험치로 초월하는 0레벨 플레이어" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:51.906Z [31merror[39m: 소설 상세 정보 추출 오류 (아공간 슈퍼마켓에 어서오세요): this.page.waitForTimeout is not a function
+2025-03-31T02:07:51.908Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:51.908Z [31merror[39m: 소설 "아공간 슈퍼마켓에 어서오세요" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:57.049Z [31merror[39m: 소설 상세 정보 추출 오류 (천재 뉴비의 흡수수선전): this.page.waitForTimeout is not a function
+2025-03-31T02:07:57.051Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:07:57.051Z [31merror[39m: 소설 "천재 뉴비의 흡수수선전" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:08:03.355Z [31merror[39m: 소설 상세 정보 추출 오류 (방송천재가 라이브로 사건을 해결함): this.page.waitForTimeout is not a function
+2025-03-31T02:08:03.357Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:08:03.357Z [31merror[39m: 소설 "방송천재가 라이브로 사건을 해결함" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:08:09.961Z [31merror[39m: 소설 상세 정보 추출 오류 (힐러가 무림에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T02:08:09.962Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:08:09.963Z [31merror[39m: 소설 "힐러가 무림에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:08:17.521Z [31merror[39m: 소설 상세 정보 추출 오류 (귀환했더니 탑공략이 너무 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T02:08:17.523Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:08:17.523Z [31merror[39m: 소설 "귀환했더니 탑공략이 너무 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:11:52.547Z [31merror[39m: 소설 상세 정보 추출 오류 (각성했더니 신의가 되었다): this.page.waitForTimeout is not a function
+2025-03-31T02:11:52.549Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:11:52.550Z [31merror[39m: 소설 "각성했더니 신의가 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:11:53.748Z [31merror[39m: 소설 상세 정보 추출 오류 (각성했더니 신의가 되었다): this.page.waitForTimeout is not a function
+2025-03-31T02:11:53.750Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:11:53.750Z [31merror[39m: 소설 "각성했더니 신의가 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:11:59.340Z [31merror[39m: 소설 상세 정보 추출 오류 (고려에서 치트 없이 문명합니다): this.page.waitForTimeout is not a function
+2025-03-31T02:11:59.341Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:11:59.341Z [31merror[39m: 소설 "고려에서 치트 없이 문명합니다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:01.228Z [31merror[39m: 소설 상세 정보 추출 오류 (고려에서 치트 없이 문명합니다): this.page.waitForTimeout is not a function
+2025-03-31T02:12:01.229Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:01.230Z [31merror[39m: 소설 "고려에서 치트 없이 문명합니다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:08.215Z [31merror[39m: 소설 상세 정보 추출 오류 (돌연 미치게 잘생겼더니 세상이 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T02:12:08.217Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:08.217Z [31merror[39m: 소설 "돌연 미치게 잘생겼더니 세상이 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:08.619Z [31merror[39m: 소설 상세 정보 추출 오류 (돌연 미치게 잘생겼더니 세상이 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T02:12:08.620Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:08.620Z [31merror[39m: 소설 "돌연 미치게 잘생겼더니 세상이 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:13.670Z [31merror[39m: 소설 상세 정보 추출 오류 (전직 목사가 이세계에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T02:12:13.672Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:13.672Z [31merror[39m: 소설 "전직 목사가 이세계에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:14.990Z [31merror[39m: 소설 상세 정보 추출 오류 (전직 목사가 이세계에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T02:12:14.991Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:14.991Z [31merror[39m: 소설 "전직 목사가 이세계에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:20.001Z [31merror[39m: 소설 상세 정보 추출 오류 (오빠가 천재였다.): this.page.waitForTimeout is not a function
+2025-03-31T02:12:20.003Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:20.003Z [31merror[39m: 소설 "오빠가 천재였다." 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:22.321Z [31merror[39m: 소설 상세 정보 추출 오류 (오빠가 천재였다.): this.page.waitForTimeout is not a function
+2025-03-31T02:12:22.322Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:22.322Z [31merror[39m: 소설 "오빠가 천재였다." 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:28.271Z [31merror[39m: 소설 상세 정보 추출 오류 (대영제국의 숨은 거물이 되었다): this.page.waitForTimeout is not a function
+2025-03-31T02:12:28.273Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:28.273Z [31merror[39m: 소설 "대영제국의 숨은 거물이 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:29.015Z [31merror[39m: 소설 상세 정보 추출 오류 (대영제국의 숨은 거물이 되었다): this.page.waitForTimeout is not a function
+2025-03-31T02:12:29.017Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:29.017Z [31merror[39m: 소설 "대영제국의 숨은 거물이 되었다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:30.969Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:12:34.430Z [31merror[39m: 소설 상세 정보 추출 오류 (경험치로 초월하는 0레벨 플레이어): this.page.waitForTimeout is not a function
+2025-03-31T02:12:34.431Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:34.431Z [31merror[39m: 소설 "경험치로 초월하는 0레벨 플레이어" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:34.662Z [31merror[39m: 소설 상세 정보 추출 오류 (경험치로 초월하는 0레벨 플레이어): this.page.waitForTimeout is not a function
+2025-03-31T02:12:34.664Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:34.664Z [31merror[39m: 소설 "경험치로 초월하는 0레벨 플레이어" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:36.646Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:12:41.039Z [31merror[39m: 소설 상세 정보 추출 오류 (아공간 슈퍼마켓에 어서오세요): this.page.waitForTimeout is not a function
+2025-03-31T02:12:41.040Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:41.040Z [31merror[39m: 소설 "아공간 슈퍼마켓에 어서오세요" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:41.985Z [31merror[39m: 소설 상세 정보 추출 오류 (아공간 슈퍼마켓에 어서오세요): this.page.waitForTimeout is not a function
+2025-03-31T02:12:41.986Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:41.986Z [31merror[39m: 소설 "아공간 슈퍼마켓에 어서오세요" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:43.168Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:12:47.345Z [31merror[39m: 소설 상세 정보 추출 오류 (천재 뉴비의 흡수수선전): this.page.waitForTimeout is not a function
+2025-03-31T02:12:47.347Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:47.347Z [31merror[39m: 소설 "천재 뉴비의 흡수수선전" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:47.377Z [31merror[39m: 소설 상세 정보 추출 오류 (천재 뉴비의 흡수수선전): this.page.waitForTimeout is not a function
+2025-03-31T02:12:47.378Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:47.378Z [31merror[39m: 소설 "천재 뉴비의 흡수수선전" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:49.863Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:12:53.530Z [31merror[39m: 소설 상세 정보 추출 오류 (방송천재가 라이브로 사건을 해결함): this.page.waitForTimeout is not a function
+2025-03-31T02:12:53.532Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:53.532Z [31merror[39m: 소설 "방송천재가 라이브로 사건을 해결함" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:53.765Z [31merror[39m: 소설 상세 정보 추출 오류 (방송천재가 라이브로 사건을 해결함): this.page.waitForTimeout is not a function
+2025-03-31T02:12:53.767Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:53.767Z [31merror[39m: 소설 "방송천재가 라이브로 사건을 해결함" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:12:56.715Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:13:00.238Z [31merror[39m: 소설 상세 정보 추출 오류 (힐러가 무림에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T02:13:00.240Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:00.240Z [31merror[39m: 소설 "힐러가 무림에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:00.377Z [31merror[39m: 소설 상세 정보 추출 오류 (힐러가 무림에서 살아가는 법): this.page.waitForTimeout is not a function
+2025-03-31T02:13:00.379Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:00.379Z [31merror[39m: 소설 "힐러가 무림에서 살아가는 법" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:06.123Z [31merror[39m: 소설 상세 정보 추출 오류 (귀환했더니 탑공략이 너무 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T02:13:06.125Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:06.125Z [31merror[39m: 소설 "귀환했더니 탑공략이 너무 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:07.556Z [31merror[39m: 소설 상세 정보 추출 오류 (귀환했더니 탑공략이 너무 쉽다): this.page.waitForTimeout is not a function
+2025-03-31T02:13:07.557Z [31merror[39m: 소설 저장 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:13:07.558Z [31merror[39m: 소설 "귀환했더니 탑공략이 너무 쉽다" 처리 중 오류: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-03-31T02:20:22.088Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:21:35.902Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:22:23.269Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:27:13.395Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:27:19.265Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:27:20.271Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:29:32.929Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:29:32.935Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:31:08.564Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:31:08.569Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:31:34.907Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:31:34.913Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:31:35.146Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.702Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.713Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.715Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.716Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.745Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.747Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.750Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.753Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.755Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:44:16.758Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:57:18.083Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:57:18.099Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:57:19.629Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:57:19.642Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:57:22.032Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:57:22.056Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T02:58:03.677Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:58:27.260Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T02:59:18.303Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T03:00:21.722Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T03:04:29.735Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T03:04:29.775Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T03:04:57.042Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute

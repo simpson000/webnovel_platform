@@ -1,7 +1,9 @@
 package com.webnovel.integration.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -108,17 +110,36 @@ public class ApiController {
 
     // 크롤링 작업 트리거
     @PostMapping("/crawler/trigger/{platform}")
-    public ResponseEntity<String> triggerCrawling(@PathVariable String platform) {
+    public ResponseEntity<Object> triggerCrawling(@PathVariable String platform) {
         try {
-            // 크롤러 서비스 호출
-            restTemplate.postForEntity(
-                    crawlerServiceUrl + "/api/crawl/" + platform,
-                    null,
-                    String.class
-            );
-            return ResponseEntity.ok("Crawling job triggered for platform: " + platform);
+            // 요청 로깅 추가
+            System.out.println("크롤링 요청 받음: " + platform);
+
+            // URL 구성 확인
+            String url = crawlerServiceUrl + "/crawl/" + platform;
+            System.out.println("크롤링 서비스 URL: " + url);
+
+            // 응답 타임아웃 설정 (10초)
+            SimpleClientHttpRequestFactory requestFactory = new SimpleClientHttpRequestFactory();
+            requestFactory.setConnectTimeout(10000);
+            requestFactory.setReadTimeout(10000);
+            RestTemplate timeoutTemplate = new RestTemplate(requestFactory);
+
+            // 크롤링 서비스 호출 (비동기로 처리)
+            new Thread(() -> {
+                try {
+                    timeoutTemplate.postForEntity(url, null, String.class);
+                } catch (Exception e) {
+                    System.err.println("크롤링 서비스 호출 오류: " + e.getMessage());
+                }
+            }).start();
+
+            // 즉시 응답 반환
+            return ResponseEntity.ok("크롤링 요청이 전송되었습니다. 상태는 API를 통해 확인할 수 있습니다.");
         } catch (Exception e) {
-            return ResponseEntity.internalServerError().body("Failed to trigger crawling: " + e.getMessage());
+            System.err.println("컨트롤러 오류: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("크롤링 요청 처리 중 오류: " + e.getMessage());
         }
     }
 

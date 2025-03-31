@@ -6,7 +6,7 @@ const config = require('../config/config');
 class BaseCrawler {
     constructor(platform) {
         this.platform = platform;
-        this.baseUrl = config.platforms[platform]?.baseUrl || '';
+        this.baseUrl = config.platforms[platform]?.baseUrl;
         this.retryCount = config.crawler.retryCount;
         this.requestDelay = config.crawler.requestDelay;
     }
@@ -36,7 +36,8 @@ class BaseCrawler {
             );
         }
     }
-    
+
+    // Promise 기반 타임아웃 - waitForTimeout 대체
     async delay(ms) {
         return new Promise((resolve) =>
             setTimeout(resolve, ms || this.requestDelay)
@@ -163,7 +164,7 @@ class BaseCrawler {
 
             // NULL 대신 기본값 설정으로 오류 방지 (안전한 데이터 객체 생성)
             const safeData = {
-                title: novelData.title || '제목 없음',
+                title: novelData.title || ' ',
                 author: novelData.author || '작가 미상',
                 description: novelData.description || '',
                 coverImageUrl: novelData.coverImageUrl || '',

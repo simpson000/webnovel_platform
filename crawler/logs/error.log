@@ -486,3 +486,46 @@
 2025-03-31T03:04:29.735Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
 2025-03-31T03:04:29.775Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
 2025-03-31T03:04:57.042Z [31merror[39m: 플랫폼 소설 조회 실패: Incorrect arguments to mysqld_stmt_execute
+2025-03-31T08:20:37.785Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:20:37.807Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:20:56.986Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:20:57.001Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:22:18.039Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:22:18.059Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:22:30.803Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:22:30.824Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:22:35.879Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:22:35.898Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:29:03.092Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:29:03.111Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:56:45.211Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:56:45.231Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T08:57:28.458Z [31merror[39m: 문피아 크롤링 실패: this.enableDebugMode is not a function
+2025-03-31T08:57:28.475Z [31merror[39m: 크롤링 오류: this.enableDebugMode is not a function
+2025-03-31T09:01:38.449Z [31merror[39m: 페이지 이동 오류 (시도 1/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:01:41.542Z [31merror[39m: 페이지 이동 오류 (시도 2/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:01:46.777Z [31merror[39m: 페이지 이동 오류 (시도 3/5): Attempted to use detached Frame 'C677F9B2D710FDB29FDA606D8DB6B59C'.
+2025-03-31T09:01:56.712Z [31merror[39m: 페이지 이동 오류 (시도 4/5): Attempted to use detached Frame 'C677F9B2D710FDB29FDA606D8DB6B59C'.
+2025-03-31T09:02:14.098Z [31merror[39m: 페이지 이동 오류 (시도 5/5): Attempted to use detached Frame 'C677F9B2D710FDB29FDA606D8DB6B59C'.
+2025-03-31T09:02:14.098Z [31merror[39m: 문피아 크롤링 실패: Attempted to use detached Frame 'C677F9B2D710FDB29FDA606D8DB6B59C'.
+2025-03-31T09:02:14.102Z [31merror[39m: 크롤링 오류: Protocol error (Target.closeTarget): No target with given id found
+2025-03-31T09:02:58.985Z [31merror[39m: 페이지 이동 오류 (시도 1/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:03:02.207Z [31merror[39m: 페이지 이동 오류 (시도 2/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:03:07.801Z [31merror[39m: 페이지 이동 오류 (시도 3/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:03:17.558Z [31merror[39m: 페이지 이동 오류 (시도 4/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:03:35.051Z [31merror[39m: 페이지 이동 오류 (시도 5/5): Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:03:35.051Z [31merror[39m: 문피아 크롤링 실패: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:03:35.064Z [31merror[39m: 크롤링 오류: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 50
+2025-03-31T09:05:24.458Z [31merror[39m: 문피아 크롤링 실패: this.processNovels is not a function
+2025-03-31T09:05:24.494Z [31merror[39m: 크롤링 오류: this.processNovels is not a function
+2025-03-31T09:12:17.919Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T09:13:00.291Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T09:15:03.861Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T09:41:37.098Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T09:41:59.559Z [31merror[39m: 문피아 크롤링 실패: novels is not defined
+2025-03-31T09:41:59.634Z [31merror[39m: 크롤링 오류: novels is not defined
+2025-03-31T09:54:19.919Z [31merror[39m: 문피아 크롤링 실패: novels is not defined
+2025-03-31T09:54:19.960Z [31merror[39m: 크롤링 오류: novels is not defined
+2025-03-31T10:06:09.509Z [31merror[39m: 페이지 콘솔 오류: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2025-03-31T10:06:20.041Z [31merror[39m: 문피아 크롤링 실패: novels is not defined
+2025-03-31T10:06:20.064Z [31merror[39m: 크롤링 오류: novels is not defined

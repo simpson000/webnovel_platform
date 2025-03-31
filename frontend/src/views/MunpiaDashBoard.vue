@@ -4,7 +4,7 @@
 
         <div class="action-panel">
             <button
-                @click="startCrawling"
+                @click="triggerCrawling"
                 :disabled="isCrawling"
                 class="crawl-button"
             >
@@ -12,14 +12,14 @@
                 <span v-else>문피아 크롤링 시작</span>
             </button>
 
-            <div class="status-display" v-if="crawlingStatus">
-                <p>
-                    상태: <span :class="statusClass">{{ crawlingStatus }}</span>
-                </p>
-                <p v-if="lastCrawled">
-                    마지막 크롤링: {{ formatDate(lastCrawled) }}
-                </p>
-            </div>
+            <button
+                @click="fetchNovels"
+                :disabled="loading"
+                class="refresh-button"
+            >
+                <span v-if="loading">데이터 로딩 중...</span>
+                <span v-else>데이터 새로고침</span>
+            </button>
         </div>
 
         <div class="debug-panel">
@@ -48,17 +48,25 @@
                 {{ error }}
             </div>
 
-            <div v-else-if="novels.length === 0" class="no-data">
-                소설 데이터가 없습니다. 크롤링을 실행해 주세요.
+            <div
+                v-if="novels.length === 0 && !loading && !error"
+                class="no-data"
+            >
+                <div class="empty-state">
+                    <!-- 이미지 태그 제거 -->
+                    <h3>소설 데이터가 없습니다</h3>
+                    <p>
+                        아직 크롤링된 소설 데이터가 없습니다. 크롤링을
+                        시작해보세요.
+                    </p>
+                    <button @click="triggerCrawling" class="primary-btn">
+                        크롤링 시작하기
+                    </button>
+                </div>
             </div>
 
-            <div v-else class="novel-grid">
-                <div
-                    v-for="novel in novels"
-                    :key="novel.id"
-                    class="novel-card"
-                    @click="openNovelPage(novel.url)"
-                >
+            <div class="novel-grid">
+                <div v-for="novel in novels" :key="novel.id" class="novel-card">
                     <div class="cover-container">
                         <img
                             :src="
@@ -71,7 +79,9 @@
                         />
                     </div>
                     <div class="novel-info">
-                        <h3 class="title">{{ novel.title }}</h3>
+                        <h3 class="title" :title="novel.title">
+                            {{ novel.title }}
+                        </h3>
                         <p class="author">{{ novel.author }}</p>
 
                         <div
@@ -97,16 +107,14 @@
                                 {{ formatNumber(novel.view_count) }}
                             </span>
                         </div>
-                        <div class="novel-link">
+
+                        <div class="actions">
                             <a
                                 :href="novel.url"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                class="link-button"
-                                @click.stop
+                                class="view-btn"
+                                >원작 보기</a
                             >
-                                원작 보기
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +125,6 @@
 
 <script>
 import axios from 'axios';
-import api from '@/api'; // 또는 정확한 경로
 
 export default {
     name: 'MunpiaDashboard',
@@ -130,8 +137,14 @@ export default {
             crawlingStatus: null,
             lastCrawled: null,
             crawlingLogs: [],
+
+            // 페이지네이션 관련 상태
+            currentPage: 1,
+            pageSize: 20,
+
             // 상태 체크를 위한 타이머
             statusCheckInterval: null,
+            lastCheckedStatus: null,
         };
     },
     computed: {
@@ -146,6 +159,41 @@ export default {
             if (status.includes('실패') || status.includes('failed'))
                 return 'status-error';
             return '';
+        },
+
+        // 페이지네이션 계산
+        totalPages() {
+            return Math.ceil(this.novels.length / this.pageSize);
+        },
+
+        // 현재 페이지에 표시할 소설 목록
+        paginatedNovels() {
+            const start = (this.currentPage - 1) * this.pageSize;
+            const end = start + this.pageSize;
+            return this.novels.slice(start, end);
+        },
+
+        // 표시할 페이지 번호 목록
+        displayedPages() {
+            const pages = [];
+            const maxPages = 5; // 표시할 최대 페이지 번호 수
+
+            let startPage = Math.max(
+                1,
+                this.currentPage - Math.floor(maxPages / 2)
+            );
+            let endPage = startPage + maxPages - 1;
+
+            if (endPage > this.totalPages) {
+                endPage = this.totalPages;
+                startPage = Math.max(1, endPage - maxPages + 1);
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                pages.push(i);
+            }
+
+            return pages;
         },
     },
     mounted() {
@@ -166,15 +214,15 @@ export default {
                 this.isCrawling = true;
                 this.addLog('info', '문피아 크롤링 작업 시작 요청...');
 
-                // 백엔드 API 호출하여 크롤링 시작
+                // 백엔드 API를 통한 호출로 수정
                 const response = await axios.post(
-                    'http://localhost:3001/api/crawl/munpia?debug=true'
+                    'http://localhost:8080/api/crawler/trigger/munpia'
                 );
 
                 this.addLog(
                     'success',
                     `크롤링 요청 성공: ${
-                        response.data.message || '크롤링이 시작되었습니다.'
+                        response.data || '크롤링이 시작되었습니다.'
                     }`
                 );
 
@@ -210,19 +258,20 @@ export default {
         async checkCrawlingStatus() {
             try {
                 const response = await axios.get(
-                    'http://localhost:3001/api/status'
+                    'http://localhost:8080/api/crawler/status'
                 );
+                const logs = response.data;
 
-                if (response.data && response.data.length > 0) {
+                if (logs && logs.length > 0) {
                     // 문피아 플랫폼 로그 찾기
-                    const munpiaLog = response.data.find(
+                    const munpiaLog = logs.find(
                         (log) => log.platform_name.toLowerCase() === 'munpia'
                     );
 
                     if (munpiaLog) {
                         // 상태 업데이트
-                        const status = munpiaLog.status;
                         const prevStatus = this.crawlingStatus;
+                        let status = munpiaLog.status;
 
                         // 상태 변경 시 로그 추가
                         if (status !== prevStatus) {
@@ -285,13 +334,18 @@ export default {
                 this.loading = true;
                 this.addLog('info', '문피아 소설 데이터 로드 중...');
 
-                const response = await api.getMunpiaNovels();
+                const response = await axios.get(
+                    'http://localhost:8080/api/novels/platform/munpia'
+                );
 
-                console.log('API 응답:', response.data); // 실제 응답 구조 확인
-
-                // API 응답 구조에 맞게 처리
+                // API 응답 구조에 유연하게 대응
                 this.novels = response.data.novels || response.data || [];
                 this.error = null;
+
+                // 데이터가 있는 경우 페이지네이션 초기화
+                if (this.novels.length > 0) {
+                    this.currentPage = 1;
+                }
 
                 this.addLog(
                     'success',
@@ -307,7 +361,7 @@ export default {
             }
         },
 
-        // 소설 페이지 열기 메서드 추가
+        // 소설 페이지 열기 메서드
         openNovelPage(url) {
             if (url) {
                 // 새 탭에서 열기
@@ -317,6 +371,21 @@ export default {
                 this.addLog('error', '이 소설의 원본 URL 정보가 없습니다.');
             }
         },
+
+        // 페이지 변경
+        changePage(page) {
+            if (page >= 1 && page <= this.totalPages) {
+                this.currentPage = page;
+                // 페이지 상단으로 스크롤
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        },
+
+        // 페이지 크기 변경 시 페이지네이션 업데이트
+        updatePagination() {
+            this.currentPage = 1; // 첫 페이지로 리셋
+        },
+
         // 로그 추가
         addLog(type, message) {
             this.crawlingLogs.unshift({
@@ -394,7 +463,8 @@ h2 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.crawl-button {
+.crawl-button,
+.refresh-button {
     padding: 12px 24px;
     background-color: #3498db;
     color: white;
@@ -404,15 +474,30 @@ h2 {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
+    margin: 5px;
+    min-width: 200px;
 }
 
-.crawl-button:hover:not(:disabled) {
-    background-color: #2980b9;
+.refresh-button {
+    background-color: #2ecc71;
+}
+
+.crawl-button:hover:not(:disabled),
+.refresh-button:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.crawl-button:disabled {
+.crawl-button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.refresh-button:hover:not(:disabled) {
+    background-color: #27ae60;
+}
+
+.crawl-button:disabled,
+.refresh-button:disabled {
     background-color: #95a5a6;
     cursor: not-allowed;
 }
@@ -492,6 +577,7 @@ h2 {
     padding: 20px;
 }
 
+/* 소설 그리드 스타일 */
 .novel-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -502,40 +588,18 @@ h2 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
     background: white;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .novel-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.novel-link {
-    margin-top: 15px;
-    text-align: center;
-}
-.link-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-.link-button:hover {
-    background-color: #2980b9;
-}
 
 .cover-container {
-    height: 270px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -547,18 +611,17 @@ h2 {
 
 .novel-info {
     padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 .title {
     font-size: 16px;
+    font-weight: bold;
     margin-bottom: 5px;
     line-height: 1.3;
+    height: 42px;
+    overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .author {
@@ -612,6 +675,150 @@ h2 {
     color: #e74c3c;
 }
 
+/* 빈 상태 스타일 */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #6c757d;
+}
+
+.empty-state h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #343a40;
+}
+
+.empty-state p {
+    color: #6c757d;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #2980b9;
+}
+
+/* 링크 버튼 스타일 */
+.novel-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #2980b9;
+}
+
+/* 페이지네이션 스타일 */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination-controls.bottom {
+    margin-top: 30px;
+}
+
+.page-size {
+    display: flex;
+    align-items: center;
+}
+
+.page-size select {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-btn {
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+    background-color: #e9ecef;
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.page-info {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+.page-number.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
 @media (max-width: 768px) {
     .novel-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -623,10 +830,12 @@ h2 {
 
     .title {
         font-size: 14px;
+        height: 36px;
     }
 
-    .log-container {
-        height: 150px;
+    .pagination-controls {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 </style>

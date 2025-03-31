@@ -32,7 +32,7 @@ const routes = [
     {
         path: '/munpia',
         name: 'munpia',
-        component: () => import('../views/MunpiaDashboard.vue'),
+        component: () => import('../views/MunpiaDashBoard.vue'),
     },
 ];
 

@@ -6,11 +6,16 @@ const config = require('../config/config');
 class MunpiaCrawler extends BaseCrawler {
     constructor() {
         super('munpia');
-        this.baseUrl = `${this.baseUrl || 'https://www.munpia.com'}`;
-        this.bestUrl = `${this.baseUrl}/page/best`;
-        this.freeUrl = `${this.baseUrl}/free`;
+        this.bestUrl =
+            'https://www.munpia.com/page/j/view/w/best/today?displayType=GRID';
+        this.latestUrl =
+            'https://www.munpia.com/page/j/view/w/golden?displayType=GRID'; // 최신작
     }
-
+    // 추가: enableDebugMode 함수 정의
+    enableDebugMode() {
+        console.log('Debug mode enabled for Munpia crawler');
+        // 추가 디버깅 설정을 여기에 구현할 수 있음
+    }
     // 지연 메서드 재정의
     async delay(ms) {
         return new Promise((resolve) =>
@@ -23,94 +28,153 @@ class MunpiaCrawler extends BaseCrawler {
         try {
             await this.initialize();
 
-            if (debug) {
-                await this.page.screenshot({ path: 'debug_munpia_home.png' });
-                logger.info('디버깅 모드: 홈페이지 스크린샷 저장됨');
-            }
-
-            // 크롤링 통계 초기화
-            let novelsFetched = 0;
-            let chaptersUpdated = 0;
+            // 디버깅 설정 및 로깅
+            if (debug) this.enableDebugMode();
 
             logger.info('문피아 베스트 페이지 크롤링 시작');
 
-            // 베스트 페이지로 이동
-            await this.navigateTo(this.bestUrl);
+            // 변수 선언
+            let allNovels = [];
+            let pageCount = 5; // 크롤링할 페이지 수 (각 페이지에 약 10-12개 작품)
 
-            // waitForTimeout 대신 setTimeout 사용
-            await new Promise((resolve) => setTimeout(resolve, 3000));
+            // 여러 페이지 크롤링
+            for (let page = 1; page <= pageCount; page++) {
+                // 페이지 URL 설정 (페이지 번호 파라미터 추가)
+                const pageUrl = `${this.bestUrl}&page=${page}`;
 
-            if (debug) {
-                await this.page.screenshot({ path: 'debug_munpia_best.png' });
-                logger.info('디버깅 모드: 베스트 페이지 스크린샷 저장됨');
+                logger.info(`페이지 이동: ${pageUrl} (${page}/${pageCount})`);
+                await this.navigateTo(pageUrl);
+                await this.delay(3000); // 페이지 로딩 대기
+
+                // 소설 목록 가져오기
+                const novels = await this.getBestNovelsList();
+                logger.info(
+                    `페이지 ${page}에서 ${novels.length}개의 소설을 찾았습니다`
+                );
+
+                // 이미 크롤링된 소설과 중복 제거
+                const newNovels = novels.filter(
+                    (novel) =>
+                        !allNovels.some(
+                            (existing) =>
+                                existing.title === novel.title &&
+                                existing.author === novel.author
+                        )
+                );
+
+                allNovels = [...allNovels, ...newNovels];
+                logger.info(
+                    `현재까지 총 ${allNovels.length}개의 고유한 소설을 찾았습니다`
+                );
+
+                // 목표 개수에 도달하면 중단
+                if (allNovels.length >= 50) {
+                    logger.info(
+                        `목표 소설 수(50)에 도달했습니다. 크롤링을 중단합니다.`
+                    );
+                    break;
+                }
+
+                // 과부하 방지를 위한 지연
+                if (page < pageCount) {
+                    await this.delay(2000);
+                }
             }
+            // 50개가 안 되면 최신작도 크롤링
+            if (allNovels.length < 50) {
+                logger.info('문피아 최신작 크롤링 시작');
+                for (let page = 1; page <= pageCount; page++) {
+                    if (allNovels.length >= 50) break;
 
-            // 베스트 소설 목록 가져오기
-            const bestNovels = await this.getBestNovelsList();
-            logger.info(
-                `문피아 베스트에서 ${bestNovels.length}개의 소설을 찾았습니다`
-            );
+                    const pageUrl = `${this.latestUrl}&page=${page}`;
+                    await this.navigateTo(pageUrl);
+                    await this.delay(3000);
 
-            // 각 소설 처리
-            for (const novelPreview of bestNovels) {
+                    const novels = await this.getBestNovelsList();
+
+                    // 중복 제거
+                    const newNovels = novels.filter(
+                        (novel) =>
+                            !allNovels.some(
+                                (existing) =>
+                                    existing.title === novel.title &&
+                                    existing.author === novel.author
+                            )
+                    );
+
+                    allNovels = [...allNovels, ...newNovels];
+                    logger.info(
+                        `최신작 페이지 ${page}에서 ${newNovels.length}개의 새로운 소설을 찾았습니다. 총: ${allNovels.length}`
+                    );
+
+                    if (allNovels.length >= 50) break;
+                    await this.delay(2000);
+                }
+            }
+            let novelCount = 0;
+            let chapterCount = 0;
+            const novelsToProcess = allNovels.slice(0, 50);
+            const uniqueNovels = this.removeDuplicates(allNovels);
+
+            for (const novelPreview of novels) {
                 try {
-                    // 소설 상세 정보 가져오기
+                    // 소설 상세 정보 가져오기 (있는 경우)
                     let novelDetail = {};
                     if (novelPreview.url) {
                         novelDetail = await this.getNovelDetail(novelPreview);
                     }
 
-                    // 저장할 데이터 객체 - undefined 값 방지를 위한 기본값 설정
-                    const safeData = {
-                        title: novelPreview.title || '제목 없음',
-                        author: novelPreview.author || '작가 미상',
-                        genre: novelPreview.genre || '기타',
-                        coverImageUrl: novelPreview.coverImageUrl || '',
-                        url: novelPreview.url || '',
-                        externalId: novelPreview.externalId || '',
-                        platform: this.platform,
-                        description: novelDetail.description || '',
-                        viewCount: novelDetail.viewCount || 0,
-                        rating: novelDetail.rating || 0,
-                        reviewCount: novelDetail.reviewCount || 0,
-                        isPaid: novelDetail.isPaid || false,
-                        price: novelDetail.price || 0,
-                        platformGenre: novelPreview.genre || '',
-                        status: 'ONGOING',
-                        popularity: novelDetail.viewCount || 0,
+                    // 소설 저장
+                    const novelData = {
+                        ...novelPreview,
+                        ...novelDetail,
                     };
 
-                    // 소설 저장
-                    const novelId = await this.saveNovel(safeData);
-                    logger.info(
-                        `소설 저장 완료: ${safeData.title} (ID: ${novelId})`
-                    );
-                    novelsFetched++;
+                    const novelId = await this.saveNovel(novelData);
+                    novelCount++;
 
-                    // waitForTimeout 대신 setTimeout 사용
-                    await new Promise((resolve) =>
-                        setTimeout(resolve, 2000 + Math.random() * 1000)
+                    // 각 소설의 로그 기록
+                    logger.info(
+                        `소설 저장 완료: ${novelPreview.title} (${novelCount}/${novelsToProcess.length})`
                     );
+
+                    // 필요한 경우 챕터 정보도 처리
+                    // 임시 지연 추가 (서버 부하 감소)
+                    await this.delay(1000);
                 } catch (error) {
                     logger.error(
                         `소설 "${novelPreview.title}" 처리 중 오류: ${error.message}`
                     );
-                    continue;
                 }
             }
 
-            // 크롤링 완료 로그 업데이트
-            await this.logCrawlingEnd(
-                'COMPLETED',
-                novelsFetched,
-                chaptersUpdated
-            );
+            // 크롤링 로그 업데이트
+            await this.logCrawlingEnd('COMPLETED', novelCount, chapterCount);
+
+            // 결과 반환
+            return { novelCount, chapterCount };
         } catch (error) {
             logger.error(`문피아 크롤링 실패: ${error.message}`);
             await this.logCrawlingEnd('FAILED', 0, 0, error.message);
+            throw error;
         } finally {
             await this.cleanup();
         }
+    }
+    // 중복 제거 헬퍼 함수 추가
+    removeDuplicates(novels) {
+        const uniqueNovels = [];
+        const seen = new Set();
+
+        for (const novel of novels) {
+            const key = `${novel.title}-${novel.author}`;
+            if (!seen.has(key)) {
+                seen.add(key);
+                uniqueNovels.push(novel);
+            }
+        }
+
+        return uniqueNovels;
     }
 
     async getBestNovelsList() {
@@ -261,6 +325,7 @@ class MunpiaCrawler extends BaseCrawler {
 
     // munpia.js 파일
 
+    // 소설 상세 정보 가져오기 함수
     async getNovelDetail(novelPreview) {
         try {
             logger.info(`소설 상세 정보 가져오기: ${novelPreview.title}`);
@@ -268,20 +333,18 @@ class MunpiaCrawler extends BaseCrawler {
             // 소설 상세 페이지로 이동
             await this.navigateTo(novelPreview.url);
 
-            // waitForTimeout 대신 setTimeout 사용
-            await new Promise((resolve) => setTimeout(resolve, 2000));
+            // 페이지 로딩 대기
+            await this.delay(2000);
 
             // 상세 정보 추출
             const details = await this.page.evaluate(() => {
-                // 설명 찾기 (여러 선택자 시도)
+                // 설명 찾기
                 let description = '';
                 const descSelectors = [
                     '.story_box',
                     '.book_intro',
                     '.synopsis',
                     '.description',
-                    '.summary',
-                    '#bookIntro',
                 ];
                 for (const selector of descSelectors) {
                     const el = document.querySelector(selector);
@@ -314,7 +377,6 @@ class MunpiaCrawler extends BaseCrawler {
                     '.total_score',
                     '.rating',
                     '.star_score',
-                    '.score',
                 ];
                 for (const selector of ratingSelectors) {
                     const el = document.querySelector(selector);
@@ -325,60 +387,12 @@ class MunpiaCrawler extends BaseCrawler {
                     }
                 }
 
-                // 리뷰수 찾기
-                let reviewCount = 0;
-                const reviewSelectors = [
-                    '.count_cmt',
-                    '.review_count',
-                    '.comment_count',
-                ];
-                for (const selector of reviewSelectors) {
-                    const el = document.querySelector(selector);
-                    if (el) {
-                        const text = el.textContent.replace(/[^0-9]/g, '');
-                        reviewCount = parseInt(text) || 0;
-                        break;
-                    }
-                }
-
-                // 유료 여부 및 가격
-                let isPaid = false;
-                let price = 0;
-
-                const priceSelectors = [
-                    '.price_info',
-                    '.coin_info',
-                    '.payment',
-                ];
-                for (const selector of priceSelectors) {
-                    if (document.querySelector(selector)) {
-                        isPaid = true;
-                        break;
-                    }
-                }
-
-                const priceNumberSelectors = [
-                    '.price_num',
-                    '.coin_num',
-                    '.price',
-                ];
-                for (const selector of priceNumberSelectors) {
-                    const el = document.querySelector(selector);
-                    if (el) {
-                        const text = el.textContent.replace(/[^0-9]/g, '');
-                        price = parseInt(text) || 0;
-                        break;
-                    }
-                }
-
-                // 기본값 설정으로 undefined 방지
                 return {
                     description: description || '',
                     viewCount: viewCount || 0,
                     rating: rating || 0,
-                    reviewCount: reviewCount || 0,
-                    isPaid: isPaid || false,
-                    price: price || 0,
+                    isPaid: false, // 기본값
+                    price: 0, // 기본값
                 };
             });
 
@@ -392,7 +406,6 @@ class MunpiaCrawler extends BaseCrawler {
                 description: '',
                 viewCount: 0,
                 rating: 0,
-                reviewCount: 0,
                 isPaid: false,
                 price: 0,
             };

@@ -11,59 +11,29 @@ const api = axios.create({
 });
 
 // API 함수들
+// api/index.js
 export default {
-    // // 소설 목록 조회
-    // getNovelList(genre, page = 0, size = 10) {
-    //     let url = `/novels?page=${page}&size=${size}`;
-    //     if (genre) url += `&genre=${genre}`;
-    //     return api.get(url);
-    // },
-
-    // // 소설 상세 조회
-    // getNovelDetail(id) {
-    //     return api.get(`/novels/${id}`);
-    // },
-
-    // // 인기 소설 조회 (플랫폼 지정 가능)
-    // getPopularNovels(platform = 'munpia') {
-    //     return api.get(`/popular?platform=${platform}`);
-    // },
-
-    // // 장르 목록 조회
-    // getGenres() {
-    //     return api.get('/genres');
-    // },
-    // // 플랫폼별 소설 조회 (문피아 중점)
-    // getPlatformNovels(platform = 'munpia', page = 0, limit = 20) {
-    //     return api.get(`/novels/${platform}?page=${page}&limit=${limit}`);
-    // },
-
-    // // 크롤러 관련 API
-    // triggerCrawling(platform) {
-    //     return api.post(`/admin/crawler/trigger/${platform}`);
-    // },
-
-    // getCrawlerStatus() {
-    //     return api.get('/admin/crawler/status');
-    // },
-    // // 디버그 로그 조회 (추가된 메서드)
-    // getDebugLogs() {
-    //     return api.get('/debug');
-    // },
-
-    // 문피아 소설 목록 가져오기
-    // 문피아 소설 목록 가져오기
+    // 문피아 소설 데이터 조회
     getMunpiaNovels() {
         return api.get('/novels/platform/munpia');
     },
 
-    // 크롤링 시작하기
+    // 크롤링 작업 시작
     startCrawling(platform) {
-        return api.post(`/admin/crawler/trigger/${platform}`);
+        return api.post(`/crawler/trigger/${platform}`);
     },
 
-    // 크롤링 상태 확인하기
+    // 크롤링 상태 확인
     getCrawlingStatus() {
-        return apiClient.get('/status');
+        return api.get('/crawler/status');
+    },
+    // 크롤링 시작 함수 추가
+    triggerCrawling(platform) {
+        return axios.post(`/crawler/trigger/${platform}`);
+    },
+
+    // 크롤링 상태 조회 함수 추가
+    getCrawlerStatus() {
+        return axios.get('/api/crawler/status');
     },
 };
